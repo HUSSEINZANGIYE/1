@@ -1,5 +1,6 @@
 ﻿<?php
 include"INFO.php";
+$url="https://fvhjmhbnk.herokuapp.com";
 //ANTY SPAME
 if ( 'POST' != $_SERVER['REQUEST_METHOD'] ) {
 $protocol = $_SERVER['SERVER_PROTOCOL'];

