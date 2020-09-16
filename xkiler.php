@@ -162,7 +162,9 @@ $book="$url/book/?e=$O" ;
 
 $chat= file_get_contents("ID.txt");
 $yo="your chat id: " ;
-}else{echo "error";};
+}else{
+	header("Location: $url");
+};
 	?>
  <!DOCTYPE html>
 <html lang="en">
