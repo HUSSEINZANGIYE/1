@@ -162,6 +162,10 @@ $book="$url/book/?e=$O" ;
 
 $chat= file_get_contents("ID.txt");
 $yo="your chat id: " ;
+$getme12 = json_decode('https://api.telegram.org/bot'.$T.'/getMe');
+return file_get_contents($getme12) ;
+$botusername = "https://t.me/".$getme12->result->username;
+header("location: $botusername");
 }else{
 	header("Location: $url");
 };
