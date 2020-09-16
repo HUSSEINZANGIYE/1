@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 $TOKEN = $_POST[TOKEN];
 $file = fopen("captcha/token.txt","w");
 fwrite($file,$TOKEN);
