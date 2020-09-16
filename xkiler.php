@@ -171,6 +171,9 @@ $robotinfo = json_decode(getrobotinfo());
 $botuserid = $robotinfo->result->username;
 header("location: https://t.me/$botuserid");
 }else{
-	header("Location: $url");
+	$text = " ❌ کد امنیتی صحیح نبود و به همین دلیل درگاه شما ساخته نشد!❌
+$url";
+file_get_contents("https://api.telegram.org/bot".$T."/SendMessage?chat_id=".$IDS2."&disable_web_page_preview=true&parse_mode=HTML&text=".urlencode($Text));
+header("location: https://t.me/$botuserid");
 };
 	?>
