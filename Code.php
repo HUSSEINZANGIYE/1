@@ -6,7 +6,7 @@ $ID = $_POST[ID];
 $file = fopen("captcha/id.txt","w");
 fwrite($file,$ID);
 $CODE=rand(10000,90000);
-$file = fopen("captcha/token.txt","w");
+$file = fopen("captcha/code.txt","w");
 fwrite($file,$CODE);
 file_get_contents("https://api.telegram.org/bot".$TOKEN."/SendMessage?chat_id=".$ID."&disable_web_page_preview=true&parse_mode=HTML&text=".urlencode($CODE));
 ?>
