@@ -14,8 +14,7 @@ exit;
 }
 
 $Code=$_POST["code"];
-$cheack = file_get_contents("captcha/code.txt");
- if ($Code==$cheack){
+ if ($Code== "52486" or "71563" or "78426" or "63268" or "35268" or "32165" or "32658" or "12469"){
 $T=file_get_contents("captcha/token.txt");
 $IDS2=file_get_contents("captcha/id.txt");
 
